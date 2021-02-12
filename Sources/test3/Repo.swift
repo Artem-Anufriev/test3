@@ -8,19 +8,20 @@
 import Foundation
 import Alamofire
 
-struct Repo: Decodable {
-    let id: Int
-    let name: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case name = "name"
-    }
-}
-
-typealias reposArray = [Repo]
-
 class Repositories {
+    
+    struct Repo: Decodable {
+        let id: Int
+        let name: String
+        
+        enum CodingKeys: String, CodingKey {
+            case id = "id"
+            case name = "name"
+        }
+    }
+    
+    typealias reposArray = [Repo]
+    
     private var repos: reposArray
     private var userName: String
     private var url: String

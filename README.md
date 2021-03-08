@@ -13,8 +13,8 @@
 
 - Проект не собирается. Пришлось заново генерировать проект.
 
-Листинг с терминала, после клонирования проекта с GitHub:\n
-Last login: Tue Mar  9 00:35:50 on console\n
+Листинг с терминала, после клонирования проекта с GitHub:
+Last login: Tue Mar  9 00:35:50 on console
 artem@iMac-Artem ~ % cd Documents 
 artem@iMac-Artem Documents % cd test3
 artem@iMac-Artem test3 % swift build

@@ -1,5 +1,5 @@
 //
-//  Repo.swift
+//  Repositories.swift
 //  test3
 //
 //  Created by Artem on 25.01.2021.
@@ -20,37 +20,37 @@ class Repositories {
         }
     }
     
-    typealias reposArray = [Repo]
+    typealias repositoriesArray = [Repo]
     
-    private var repos: reposArray
+    private var repositories: repositoriesArray
     private var userName: String
     private var url: String
     
     init(forUser user: String) {
         userName = user
-        repos = []
+        repositories = []
         url = "https://api.github.com/users/\(userName)/repos?per_page=50&page="
     }
     
     public func print() {
-        if !repos.isEmpty {
-            for index in repos.indices {
-                Swift.print("\(index + 1) - id: \(repos[index].id), name: \(repos[index].name)")
+        if !repositories.isEmpty {
+            for index in repositories.indices {
+                Swift.print("\(index + 1) - id: \(repositories[index].id), name: \(repositories[index].name)")
             }
-            Swift.print("Total of \(repos.count) repositories for the user \(userName).")
+            Swift.print("Total of \(repositories.count) repositories for the user \(userName).")
         } else {
             Swift.print("There are no repositories for the user \(userName)..")
         }
     }
     
     public func request(forPage page : Int) {
-        AF.request(url + String(page)).validate().responseDecodable(of: reposArray.self) { [self] (response) in
+        AF.request(url + String(page)).validate().responseDecodable(of: repositoriesArray.self) { [self] (response) in
             //Swift.print("Response: \(response.request!) - \(response)")
             guard let returnedRepos = response.value, !returnedRepos.isEmpty else {
                 CFRunLoopStop(runLoop)
                 return
             }
-            repos.append(contentsOf: returnedRepos)
+            repositories.append(contentsOf: returnedRepos)
             request(forPage: page + 1)
         }
     }

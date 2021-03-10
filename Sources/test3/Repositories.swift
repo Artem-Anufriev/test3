@@ -26,10 +26,10 @@ class Repositories {
     private var userName: String
     private var url: String
     
-    init(forUser user: String) {
-        userName = user
-        repositories = []
-        url = "https://api.github.com/users/\(userName)/repos?per_page=50&page="
+    init(forUser userName: String) {
+        self.userName = userName
+        self.repositories = []
+        self.url = "https://api.github.com/users/\(userName)/repos?per_page=100&page="
     }
     
     public func print() {
@@ -43,15 +43,15 @@ class Repositories {
         }
     }
     
-    public func request(forPage page : Int) {
-        AF.request(url + String(page)).validate().responseDecodable(of: repositoriesArray.self) { [self] (response) in
-            //Swift.print("Response: \(response.request!) - \(response)")
+    public func request(forPage page : Int, semaphore mySemaphore : DispatchSemaphore) {
+        Swift.print("request \(page)")
+        AF.request(url + String(page)).validate().responseDecodable(of: repositoriesArray.self, queue: .global()) { [self] (response) in
             guard let returnedRepos = response.value, !returnedRepos.isEmpty else {
-                CFRunLoopStop(runLoop)
+                mySemaphore.signal()
                 return
             }
             repositories.append(contentsOf: returnedRepos)
-            request(forPage: page + 1)
+            request(forPage: page + 1,semaphore: mySemaphore)
         }
     }
 }

@@ -1,5 +1,4 @@
 import Foundation
-import Alamofire
 
 print("Enter the user name to get the list of repositories and then press enter:")
 var userName: String = readLine()!

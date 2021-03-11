@@ -44,7 +44,6 @@ class Repositories {
     }
     
     public func request(forPage page : Int, semaphore mySemaphore : DispatchSemaphore) {
-        Swift.print("request \(page)")
         AF.request(url + String(page)).validate().responseDecodable(of: repositoriesArray.self, queue: .global()) { [self] (response) in
             guard let returnedRepos = response.value, !returnedRepos.isEmpty else {
                 mySemaphore.signal()

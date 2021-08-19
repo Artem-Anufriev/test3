@@ -2,6 +2,7 @@ import Foundation
 import Alamofire
 
 var semaphore = DispatchSemaphore(value: 0)
+var repositories = repositoriesArray()
 
 private func request(forURL url : URL, completion: @escaping(repositoriesArray) -> Void) {
     AF.request(url).validate().responseDecodable(of: repositoriesArray.self, queue: .global()) { response in
@@ -33,11 +34,9 @@ guard let userName = readLine(),
       !userName.isEmpty,
       let url = URL(string: "https://api.github.com/users/\(userName)/repos?per_page=100&page=1") else
 {
-    print("username is empty.")
+    print("invalid username.")
     exit(0)
 }
-
-var repositories = repositoriesArray()
 
 request(forURL: url) { repos in
     repositories.append(contentsOf: repos)

@@ -1,834 +1,1196 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXAggregateTarget section */
-		"test3::test3PackageTests::ProductTarget" /* test3PackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_120 /* Build configuration list for PBXAggregateTarget "test3PackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_123 /* PBXTargetDependency */,
-			);
-			name = test3PackageTests;
-			productName = test3PackageTests;
-		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		AC52D69825BE13E8001B7127 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52D69725BE13E8001B7127 /* Repo.swift */; };
-		OBJ_103 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Package.swift */; };
-		OBJ_109 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
-		OBJ_111 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_118 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_129 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
-		OBJ_130 /* test3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* test3Tests.swift */; };
-		OBJ_132 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_62 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* AFError.swift */; };
-		OBJ_63 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Alamofire.swift */; };
-		OBJ_64 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* AlamofireExtended.swift */; };
-		OBJ_65 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AuthenticationInterceptor.swift */; };
-		OBJ_66 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* CachedResponseHandler.swift */; };
-		OBJ_67 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Combine.swift */; };
-		OBJ_68 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DispatchQueue+Alamofire.swift */; };
-		OBJ_69 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* EventMonitor.swift */; };
-		OBJ_70 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* HTTPHeaders.swift */; };
-		OBJ_71 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* HTTPMethod.swift */; };
-		OBJ_72 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* MultipartFormData.swift */; };
-		OBJ_73 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* MultipartUpload.swift */; };
-		OBJ_74 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* NetworkReachabilityManager.swift */; };
-		OBJ_75 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Notifications.swift */; };
-		OBJ_76 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* OperationQueue+Alamofire.swift */; };
-		OBJ_77 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ParameterEncoder.swift */; };
-		OBJ_78 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ParameterEncoding.swift */; };
-		OBJ_79 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Protected.swift */; };
-		OBJ_80 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* RedirectHandler.swift */; };
-		OBJ_81 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Request.swift */; };
-		OBJ_82 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* RequestInterceptor.swift */; };
-		OBJ_83 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* RequestTaskMap.swift */; };
-		OBJ_84 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Response.swift */; };
-		OBJ_85 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* ResponseSerialization.swift */; };
-		OBJ_86 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Result+Alamofire.swift */; };
-		OBJ_87 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* RetryPolicy.swift */; };
-		OBJ_88 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ServerTrustEvaluation.swift */; };
-		OBJ_89 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Session.swift */; };
-		OBJ_90 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* SessionDelegate.swift */; };
-		OBJ_91 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* StringEncoding+Alamofire.swift */; };
-		OBJ_92 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* URLConvertible+URLRequestConvertible.swift */; };
-		OBJ_93 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* URLEncodedFormEncoder.swift */; };
-		OBJ_94 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* URLRequest+Alamofire.swift */; };
-		OBJ_95 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* URLSessionConfiguration+Alamofire.swift */; };
-		OBJ_96 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Validation.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AC52D68D25BE1379001B7127 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
-		};
-		AC52D68E25BE1379001B7127 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "test3::test3";
-			remoteInfo = test3;
-		};
-		AC52D68F25BE1379001B7127 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
-		};
-		AC52D69425BE137A001B7127 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "test3::test3Tests";
-			remoteInfo = test3Tests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		AC52D69725BE13E8001B7127 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
-		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_13 /* test3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test3Tests.swift; sourceTree = "<group>"; };
-		OBJ_16 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/artem/Desktop/test3/.build/checkouts/Alamofire/Package.swift; sourceTree = "<group>"; };
-		OBJ_17 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		OBJ_18 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		OBJ_19 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
-		OBJ_20 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		OBJ_21 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
-		OBJ_22 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
-		OBJ_23 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_24 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
-		OBJ_25 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
-		OBJ_26 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		OBJ_27 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		OBJ_28 /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
-		OBJ_29 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		OBJ_30 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		OBJ_31 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_32 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
-		OBJ_33 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		OBJ_34 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
-		OBJ_35 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_37 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
-		OBJ_38 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		OBJ_40 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_42 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
-		OBJ_43 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		OBJ_45 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		OBJ_46 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_47 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		OBJ_48 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		OBJ_49 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_50 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_51 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		OBJ_56 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		"test3::test3::Product" /* test3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = test3; sourceTree = BUILT_PRODUCTS_DIR; };
-		"test3::test3Tests::Product" /* test3Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = test3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		OBJ_110 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_111 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_131 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_132 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_97 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_11 /* test3Tests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_11 /* test3Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* XCTestManifests.swift */,
-				OBJ_13 /* test3Tests.swift */,
-			);
-			name = test3Tests;
-			path = Tests/test3Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_14 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_15 /* Alamofire 5.4.1 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_15 /* Alamofire 5.4.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_16 /* Package.swift */,
-				OBJ_17 /* AFError.swift */,
-				OBJ_18 /* Alamofire.swift */,
-				OBJ_19 /* AlamofireExtended.swift */,
-				OBJ_20 /* AuthenticationInterceptor.swift */,
-				OBJ_21 /* CachedResponseHandler.swift */,
-				OBJ_22 /* Combine.swift */,
-				OBJ_23 /* DispatchQueue+Alamofire.swift */,
-				OBJ_24 /* EventMonitor.swift */,
-				OBJ_25 /* HTTPHeaders.swift */,
-				OBJ_26 /* HTTPMethod.swift */,
-				OBJ_27 /* MultipartFormData.swift */,
-				OBJ_28 /* MultipartUpload.swift */,
-				OBJ_29 /* NetworkReachabilityManager.swift */,
-				OBJ_30 /* Notifications.swift */,
-				OBJ_31 /* OperationQueue+Alamofire.swift */,
-				OBJ_32 /* ParameterEncoder.swift */,
-				OBJ_33 /* ParameterEncoding.swift */,
-				OBJ_34 /* Protected.swift */,
-				OBJ_35 /* RedirectHandler.swift */,
-				OBJ_36 /* Request.swift */,
-				OBJ_37 /* RequestInterceptor.swift */,
-				OBJ_38 /* RequestTaskMap.swift */,
-				OBJ_39 /* Response.swift */,
-				OBJ_40 /* ResponseSerialization.swift */,
-				OBJ_41 /* Result+Alamofire.swift */,
-				OBJ_42 /* RetryPolicy.swift */,
-				OBJ_43 /* ServerTrustEvaluation.swift */,
-				OBJ_44 /* Session.swift */,
-				OBJ_45 /* SessionDelegate.swift */,
-				OBJ_46 /* StringEncoding+Alamofire.swift */,
-				OBJ_47 /* URLConvertible+URLRequestConvertible.swift */,
-				OBJ_48 /* URLEncodedFormEncoder.swift */,
-				OBJ_49 /* URLRequest+Alamofire.swift */,
-				OBJ_50 /* URLSessionConfiguration+Alamofire.swift */,
-				OBJ_51 /* Validation.swift */,
-			);
-			name = "Alamofire 5.4.1";
-			path = .build/checkouts/Alamofire/Source;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_5 /*  */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_14 /* Dependencies */,
-				OBJ_52 /* Products */,
-				OBJ_56 /* README.md */,
-			);
-			name = "";
-			sourceTree = "<group>";
-		};
-		OBJ_52 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"test3::test3::Product" /* test3 */,
-				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
-				"test3::test3Tests::Product" /* test3Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* test3 */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* test3 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* main.swift */,
-				AC52D69725BE13E8001B7127 /* Repo.swift */,
-			);
-			name = test3;
-			path = Sources/test3;
-			sourceTree = SOURCE_ROOT;
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		"Alamofire::Alamofire" /* Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "Alamofire" */;
-			buildPhases = (
-				OBJ_61 /* Sources */,
-				OBJ_97 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = "Alamofire::Alamofire::Product" /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_99 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
-			buildPhases = (
-				OBJ_102 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlamofirePackageDescription;
-			productName = AlamofirePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"test3::SwiftPMPackageDescription" /* test3PackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_114 /* Build configuration list for PBXNativeTarget "test3PackageDescription" */;
-			buildPhases = (
-				OBJ_117 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = test3PackageDescription;
-			productName = test3PackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"test3::test3" /* test3 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_105 /* Build configuration list for PBXNativeTarget "test3" */;
-			buildPhases = (
-				OBJ_108 /* Sources */,
-				OBJ_110 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_112 /* PBXTargetDependency */,
-			);
-			name = test3;
-			productName = test3;
-			productReference = "test3::test3::Product" /* test3 */;
-			productType = "com.apple.product-type.tool";
-		};
-		"test3::test3Tests" /* test3Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_125 /* Build configuration list for PBXNativeTarget "test3Tests" */;
-			buildPhases = (
-				OBJ_128 /* Sources */,
-				OBJ_131 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_133 /* PBXTargetDependency */,
-				OBJ_134 /* PBXTargetDependency */,
-			);
-			name = test3Tests;
-			productName = test3Tests;
-			productReference = "test3::test3Tests::Product" /* test3Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftMigration = 9999;
-				LastUpgradeCheck = 9999;
-			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "test3" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_52 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				"Alamofire::Alamofire" /* Alamofire */,
-				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
-				"test3::test3" /* test3 */,
-				"test3::SwiftPMPackageDescription" /* test3PackageDescription */,
-				"test3::test3PackageTests::ProductTarget" /* test3PackageTests */,
-				"test3::test3Tests" /* test3Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		OBJ_102 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_103 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_108 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_109 /* main.swift in Sources */,
-				AC52D69825BE13E8001B7127 /* Repo.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_117 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_118 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_128 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_129 /* XCTestManifests.swift in Sources */,
-				OBJ_130 /* test3Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_61 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_62 /* AFError.swift in Sources */,
-				OBJ_63 /* Alamofire.swift in Sources */,
-				OBJ_64 /* AlamofireExtended.swift in Sources */,
-				OBJ_65 /* AuthenticationInterceptor.swift in Sources */,
-				OBJ_66 /* CachedResponseHandler.swift in Sources */,
-				OBJ_67 /* Combine.swift in Sources */,
-				OBJ_68 /* DispatchQueue+Alamofire.swift in Sources */,
-				OBJ_69 /* EventMonitor.swift in Sources */,
-				OBJ_70 /* HTTPHeaders.swift in Sources */,
-				OBJ_71 /* HTTPMethod.swift in Sources */,
-				OBJ_72 /* MultipartFormData.swift in Sources */,
-				OBJ_73 /* MultipartUpload.swift in Sources */,
-				OBJ_74 /* NetworkReachabilityManager.swift in Sources */,
-				OBJ_75 /* Notifications.swift in Sources */,
-				OBJ_76 /* OperationQueue+Alamofire.swift in Sources */,
-				OBJ_77 /* ParameterEncoder.swift in Sources */,
-				OBJ_78 /* ParameterEncoding.swift in Sources */,
-				OBJ_79 /* Protected.swift in Sources */,
-				OBJ_80 /* RedirectHandler.swift in Sources */,
-				OBJ_81 /* Request.swift in Sources */,
-				OBJ_82 /* RequestInterceptor.swift in Sources */,
-				OBJ_83 /* RequestTaskMap.swift in Sources */,
-				OBJ_84 /* Response.swift in Sources */,
-				OBJ_85 /* ResponseSerialization.swift in Sources */,
-				OBJ_86 /* Result+Alamofire.swift in Sources */,
-				OBJ_87 /* RetryPolicy.swift in Sources */,
-				OBJ_88 /* ServerTrustEvaluation.swift in Sources */,
-				OBJ_89 /* Session.swift in Sources */,
-				OBJ_90 /* SessionDelegate.swift in Sources */,
-				OBJ_91 /* StringEncoding+Alamofire.swift in Sources */,
-				OBJ_92 /* URLConvertible+URLRequestConvertible.swift in Sources */,
-				OBJ_93 /* URLEncodedFormEncoder.swift in Sources */,
-				OBJ_94 /* URLRequest+Alamofire.swift in Sources */,
-				OBJ_95 /* URLSessionConfiguration+Alamofire.swift in Sources */,
-				OBJ_96 /* Validation.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_112 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = AC52D68D25BE1379001B7127 /* PBXContainerItemProxy */;
-		};
-		OBJ_123 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "test3::test3Tests" /* test3Tests */;
-			targetProxy = AC52D69425BE137A001B7127 /* PBXContainerItemProxy */;
-		};
-		OBJ_133 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "test3::test3" /* test3 */;
-			targetProxy = AC52D68E25BE1379001B7127 /* PBXContainerItemProxy */;
-		};
-		OBJ_134 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = AC52D68F25BE1379001B7127 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		OBJ_100 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.1.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_101 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.1.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_106 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = test3.xcodeproj/test3_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = test3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_107 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = test3.xcodeproj/test3_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = test3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_115 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_116 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_121 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_122 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_126 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = test3.xcodeproj/test3Tests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = test3Tests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_127 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = test3.xcodeproj/test3Tests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = test3Tests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-					"DEBUG=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-		OBJ_59 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = test3.xcodeproj/Alamofire_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					CFNetwork,
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Alamofire;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_60 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = test3.xcodeproj/Alamofire_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					CFNetwork,
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Alamofire;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		OBJ_105 /* Build configuration list for PBXNativeTarget "test3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_106 /* Debug */,
-				OBJ_107 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_114 /* Build configuration list for PBXNativeTarget "test3PackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_115 /* Debug */,
-				OBJ_116 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_120 /* Build configuration list for PBXAggregateTarget "test3PackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_121 /* Debug */,
-				OBJ_122 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_125 /* Build configuration list for PBXNativeTarget "test3Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_126 /* Debug */,
-				OBJ_127 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_2 /* Build configuration list for PBXProject "test3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_58 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_59 /* Debug */,
-				OBJ_60 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_99 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_100 /* Debug */,
-				OBJ_101 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = OBJ_1 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "Alamofire::Alamofire" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_59";
+         buildPhases = (
+            "OBJ_62",
+            "OBJ_98"
+         );
+         dependencies = (
+         );
+         name = "Alamofire";
+         productName = "Alamofire";
+         productReference = "Alamofire::Alamofire::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Alamofire::Alamofire::Product" = {
+         isa = "PBXFileReference";
+         path = "Alamofire.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Alamofire::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_100";
+         buildPhases = (
+            "OBJ_103"
+         );
+         dependencies = (
+         );
+         name = "AlamofirePackageDescription";
+         productName = "AlamofirePackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_53";
+         projectDirPath = ".";
+         targets = (
+            "Alamofire::Alamofire",
+            "Alamofire::SwiftPMPackageDescription",
+            "test3::test3",
+            "test3::SwiftPMPackageDescription",
+            "test3::test3PackageTests::ProductTarget",
+            "test3::test3Tests"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "main.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_101",
+            "OBJ_102"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_101" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
+               "-package-description-version",
+               "5.1.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_102" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
+               "-package-description-version",
+               "5.1.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_103" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_104"
+         );
+      };
+      "OBJ_104" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "OBJ_106" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_107",
+            "OBJ_108"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_107" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "test3.xcodeproj/test3_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.12";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "test3";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_108" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "test3.xcodeproj/test3_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.12";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "test3";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_109" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_110",
+            "OBJ_111"
+         );
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_110" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_111" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_112" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_113"
+         );
+      };
+      "OBJ_113" = {
+         isa = "PBXBuildFile";
+         fileRef = "Alamofire::Alamofire::Product";
+      };
+      "OBJ_114" = {
+         isa = "PBXTargetDependency";
+         target = "Alamofire::Alamofire";
+      };
+      "OBJ_116" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_117",
+            "OBJ_118"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_117" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
+               "-package-description-version",
+               "5.3.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_118" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
+               "-package-description-version",
+               "5.3.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_119" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_120"
+         );
+      };
+      "OBJ_12" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_13",
+            "OBJ_14"
+         );
+         name = "test3Tests";
+         path = "Tests/test3Tests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_120" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_122" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_123",
+            "OBJ_124"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_123" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_124" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_125" = {
+         isa = "PBXTargetDependency";
+         target = "test3::test3Tests";
+      };
+      "OBJ_127" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_128",
+            "OBJ_129"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_128" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "test3.xcodeproj/test3Tests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "test3Tests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_129" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "test3.xcodeproj/test3Tests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "test3Tests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "XCTestManifests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_130" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_131",
+            "OBJ_132"
+         );
+      };
+      "OBJ_131" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_132" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_133" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_134"
+         );
+      };
+      "OBJ_134" = {
+         isa = "PBXBuildFile";
+         fileRef = "Alamofire::Alamofire::Product";
+      };
+      "OBJ_135" = {
+         isa = "PBXTargetDependency";
+         target = "test3::test3";
+      };
+      "OBJ_136" = {
+         isa = "PBXTargetDependency";
+         target = "Alamofire::Alamofire";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "test3Tests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_16"
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_16" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_17",
+            "OBJ_18",
+            "OBJ_19",
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_22",
+            "OBJ_23",
+            "OBJ_24",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_30",
+            "OBJ_31",
+            "OBJ_32",
+            "OBJ_33",
+            "OBJ_34",
+            "OBJ_35",
+            "OBJ_36",
+            "OBJ_37",
+            "OBJ_38",
+            "OBJ_39",
+            "OBJ_40",
+            "OBJ_41",
+            "OBJ_42",
+            "OBJ_43",
+            "OBJ_44",
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_47",
+            "OBJ_48",
+            "OBJ_49",
+            "OBJ_50",
+            "OBJ_51",
+            "OBJ_52"
+         );
+         name = "Alamofire 5.4.1";
+         path = ".build/checkouts/Alamofire/Source";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/artem/Documents/test3/.build/checkouts/Alamofire/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "AFError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "Alamofire.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "AlamofireExtended.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "AuthenticationInterceptor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "CachedResponseHandler.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "Combine.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "DispatchQueue+Alamofire.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_25" = {
+         isa = "PBXFileReference";
+         path = "EventMonitor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_26" = {
+         isa = "PBXFileReference";
+         path = "HTTPHeaders.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_27" = {
+         isa = "PBXFileReference";
+         path = "HTTPMethod.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "MultipartFormData.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXFileReference";
+         path = "MultipartUpload.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         path = "NetworkReachabilityManager.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_31" = {
+         isa = "PBXFileReference";
+         path = "Notifications.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_32" = {
+         isa = "PBXFileReference";
+         path = "OperationQueue+Alamofire.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_33" = {
+         isa = "PBXFileReference";
+         path = "ParameterEncoder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_34" = {
+         isa = "PBXFileReference";
+         path = "ParameterEncoding.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "Protected.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_36" = {
+         isa = "PBXFileReference";
+         path = "RedirectHandler.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
+         path = "Request.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXFileReference";
+         path = "RequestInterceptor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "RequestTaskMap.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXFileReference";
+         path = "Response.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_41" = {
+         isa = "PBXFileReference";
+         path = "ResponseSerialization.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_42" = {
+         isa = "PBXFileReference";
+         path = "Result+Alamofire.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_43" = {
+         isa = "PBXFileReference";
+         path = "RetryPolicy.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_44" = {
+         isa = "PBXFileReference";
+         path = "ServerTrustEvaluation.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_45" = {
+         isa = "PBXFileReference";
+         path = "Session.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_46" = {
+         isa = "PBXFileReference";
+         path = "SessionDelegate.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_47" = {
+         isa = "PBXFileReference";
+         path = "StringEncoding+Alamofire.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_48" = {
+         isa = "PBXFileReference";
+         path = "URLConvertible+URLRequestConvertible.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_49" = {
+         isa = "PBXFileReference";
+         path = "URLEncodedFormEncoder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_11",
+            "OBJ_15",
+            "OBJ_53",
+            "OBJ_57"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXFileReference";
+         path = "URLRequest+Alamofire.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_51" = {
+         isa = "PBXFileReference";
+         path = "URLSessionConfiguration+Alamofire.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_52" = {
+         isa = "PBXFileReference";
+         path = "Validation.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_53" = {
+         isa = "PBXGroup";
+         children = (
+            "test3::test3::Product",
+            "test3::test3Tests::Product",
+            "Alamofire::Alamofire::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_57" = {
+         isa = "PBXFileReference";
+         path = "README.md";
+         sourceTree = "<group>";
+      };
+      "OBJ_59" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_60",
+            "OBJ_61"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "test3.xcodeproj/Alamofire_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "10.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.12";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+               "-framework",
+               "CFNetwork"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Alamofire";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Alamofire";
+            TVOS_DEPLOYMENT_TARGET = "10.0";
+            WATCHOS_DEPLOYMENT_TARGET = "3.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_61" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "test3.xcodeproj/Alamofire_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "10.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.12";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+               "-framework",
+               "CFNetwork"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Alamofire";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Alamofire";
+            TVOS_DEPLOYMENT_TARGET = "10.0";
+            WATCHOS_DEPLOYMENT_TARGET = "3.0";
+         };
+         name = "Release";
+      };
+      "OBJ_62" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65",
+            "OBJ_66",
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+            "OBJ_72",
+            "OBJ_73",
+            "OBJ_74",
+            "OBJ_75",
+            "OBJ_76",
+            "OBJ_77",
+            "OBJ_78",
+            "OBJ_79",
+            "OBJ_80",
+            "OBJ_81",
+            "OBJ_82",
+            "OBJ_83",
+            "OBJ_84",
+            "OBJ_85",
+            "OBJ_86",
+            "OBJ_87",
+            "OBJ_88",
+            "OBJ_89",
+            "OBJ_90",
+            "OBJ_91",
+            "OBJ_92",
+            "OBJ_93",
+            "OBJ_94",
+            "OBJ_95",
+            "OBJ_96",
+            "OBJ_97"
+         );
+      };
+      "OBJ_63" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_64" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_65" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_66" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_67" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_68" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_23";
+      };
+      "OBJ_69" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_25";
+      };
+      "OBJ_71" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_26";
+      };
+      "OBJ_72" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_27";
+      };
+      "OBJ_73" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_74" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_75" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_76" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_31";
+      };
+      "OBJ_77" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+      };
+      "OBJ_78" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_33";
+      };
+      "OBJ_79" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_34";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10"
+         );
+         name = "test3";
+         path = "Sources/test3";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_80" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_81" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_36";
+      };
+      "OBJ_82" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_37";
+      };
+      "OBJ_83" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_38";
+      };
+      "OBJ_84" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+      };
+      "OBJ_85" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_40";
+      };
+      "OBJ_86" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_41";
+      };
+      "OBJ_87" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_42";
+      };
+      "OBJ_88" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_43";
+      };
+      "OBJ_89" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_44";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Repositories.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_45";
+      };
+      "OBJ_91" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_46";
+      };
+      "OBJ_92" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_47";
+      };
+      "OBJ_93" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_48";
+      };
+      "OBJ_94" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_49";
+      };
+      "OBJ_95" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_50";
+      };
+      "OBJ_96" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_51";
+      };
+      "OBJ_97" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_52";
+      };
+      "OBJ_98" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "test3::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_116";
+         buildPhases = (
+            "OBJ_119"
+         );
+         dependencies = (
+         );
+         name = "test3PackageDescription";
+         productName = "test3PackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "test3::test3" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_106";
+         buildPhases = (
+            "OBJ_109",
+            "OBJ_112"
+         );
+         dependencies = (
+            "OBJ_114"
+         );
+         name = "test3";
+         productName = "test3";
+         productReference = "test3::test3::Product";
+         productType = "com.apple.product-type.tool";
+      };
+      "test3::test3::Product" = {
+         isa = "PBXFileReference";
+         path = "test3";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "test3::test3PackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_122";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_125"
+         );
+         name = "test3PackageTests";
+         productName = "test3PackageTests";
+      };
+      "test3::test3Tests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_127";
+         buildPhases = (
+            "OBJ_130",
+            "OBJ_133"
+         );
+         dependencies = (
+            "OBJ_135",
+            "OBJ_136"
+         );
+         name = "test3Tests";
+         productName = "test3Tests";
+         productReference = "test3::test3Tests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "test3::test3Tests::Product" = {
+         isa = "PBXFileReference";
+         path = "test3Tests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+   };
+   rootObject = "OBJ_1";
 }
